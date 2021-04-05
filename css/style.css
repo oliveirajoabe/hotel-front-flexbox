@@ -56,6 +56,7 @@ header li:last-child {margin-right: 0;} /*pega o ultimo filho do component*/
 .hero h3{
     font-size: 2rem;
     margin-bottom: 15px;
+    text-align: center;
 }
 .hero .btn{
     background-color: #fff;
@@ -87,6 +88,7 @@ header li:last-child {margin-right: 0;} /*pega o ultimo filho do component*/
     width: 200px;
     height: 2px;
     background-color: #191c03;
+    margin-bottom: 70px;
     border:none;
 }
 .conheca-o-hotel .grid {
@@ -105,10 +107,62 @@ header li:last-child {margin-right: 0;} /*pega o ultimo filho do component*/
 .conheca-o-hotel .grid li.small{flex-basis: 40%;}
 .conheca-o-hotel .grid li.large{flex-basis: 60%;}
 
+/* CARACTERISTICAS */
+.caracteristicas{
+    background-color: #191c03;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+.caracteristicas h3{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #fff;
+    text-align: center;
+}
+.caracteristicas p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #fff;
+    text-align: center;
+}
+.caracteristicas hr{
+    width: 200px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 70px;
+    border:none;
+}
+.caracteristicas .grid{
+    width: 100%;
+    display: flex;
+}
+.caracteristicas .grid li{
+    padding: 0 30px;
+    text-align: center;
+}
+.caracteristicas .grid li i {
+    color: #c3c63b;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+.caracteristicas .grid li h4{
+    font-size: 1.5rem;
+    color: #c3c63b;
+    margin-bottom: 30px;
+}
+.caracteristicas .grid li p{ color: #fff;}
+
+
+
 @media (max-width: 700px){
     header {flex-direction: column;}
     header img {margin-bottom: 15px;}
     .hero h1 {font-size: 2.5rem;}
     .hero h3 {font-size: 1.5rem;}
     .conheca-o-hotel .grid li.small, .conheca-o-hotel .grid li.large{flex-basis: 100%;}
+}
+@media (max-width: 850px) {
+    .caracteristicas .grid {flex-direction: column;}
 }
